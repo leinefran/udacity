@@ -25,6 +25,10 @@ ul {
   margin: 0;
 }
 
+img, embed,
+object, video {
+    max-width: 100%;
+}
 
 /*
  *
@@ -105,6 +109,8 @@ ul {
 .nav a {
   text-decoration: none;
   color: #616161;
+  min-height: 48px;
+  min-width: 48px;
 }
 
 .nav a:hover {
@@ -369,4 +375,6 @@ footer li {
 footer a {
   text-decoration: none;
   color: #333;
+  min-width: 48px;
+  min-height: 48px;
 }

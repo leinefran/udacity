@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!-- How to use media queries to create a responsive web design -->
+<html>
+    <head>
+        <style>
+            body, html {
+                padding: 20px;
+            }
+
+            @media screen and (min-width: 500px) {
+                body {
+                    background-color: green;
+            }
+
+                @media screen and (min-width: 800px) {
+                    body {
+                        background-color: skyblue;
+                    }
+                }
+        </style>
+    </head>
+    <main>
+        <h1>Hello, World!</h1>
+        <h2>Using media queries</h2>
+        <p>Media queries can be applied in three different ways</p>
+            <ul>
+                <li>As a link inside the html document in the head tag. Example:</li>
+                <xmp>
+                    <html>
+                        <head>
+                            <link rel="stylesheet" media="screen and (min-width: 500px)" href="yes.css">
+                        </head>
+                    </html>
+                </xmp>
+                <li>Embed with the @media tag, as it was done in this html document. Example:</li>
+                <xmp>
+                    <html>
+                        <head>
+                            <style>
+                                @media screen and (min-width: 500px) {
+                                    body {
+                                        background-color: green;
+                                    }
+                            </style>
+                        </head>
+                    </html>
+                </xmp>
+                <li>You can embed then in the main HTML file or the main CSS file with an @import tag.</li>
+                    <xmp>
+                        /* Everything 700px and lower */
+                        @import url("./700.css") only screen and (max-width: 700px);
+                    </xmp>
+            </ul>
+    </main>
+</html>

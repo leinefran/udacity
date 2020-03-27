@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!-- Design Patters -->
+<html>
+    <head>
+        <title>Layout Shifter</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            html, body {
+                margin: 0;
+                padding: 0;
+            }
+
+            .container {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            .box {
+                width: 100%;
+                height: 200px;
+            }
+
+            #container2 {
+                height: auto;
+            }
+
+            .dark-blue {
+                background-color: darkblue;
+            }
+
+            .light-blue {
+                background-color: lightblue;
+            }
+
+            .green {
+                background-color: green;
+            }
+
+            .red {
+                background-color: orangered;
+            }
+
+            .orange {
+                background-color: darkorange;
+            }
+
+            @media screen and (min-width: 500px) {
+                .dark-blue {
+                    width: 50%;
+                }
+
+                #container2 {
+                    width: 50%;
+                }
+            }
+
+            @media screen and (min-width: 600px) {
+                .dark-blue {
+                    width: 25%;
+                    order: 1;
+                }
+
+                .red {
+                    width: 25%;
+                    order: -1;
+                }
+            }
+
+            @media screen and (min-width: ) {
+                .container {
+                    width: 700px;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="box dark-blue"></div>
+            <div class="container" id="container2">
+                <div class="box light-blue"></div>
+                <div class="box green"></div>
+            </div>
+            <div class="box red"></div>
+            <div class="box orange"></div>
+        </div>
+    </body>
+</html>

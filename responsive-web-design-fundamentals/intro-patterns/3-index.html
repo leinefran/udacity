@@ -42,22 +42,28 @@
                 background-color: orangered;
             }
 
-            .orange {
-                background-color: darkorange;
-            }
-
             @media screen and (min-width: 500px) {
                 .dark-blue {
                     width: 50%;
+                    height: 200px;
                 }
 
                 #container2 {
                     width: 50%;
+                    height: 200px;
+                }
+
+                .light-blue, .green {
+                    height: 50%;
+                }
+
+                .red {
+                    height: 100px;
                 }
             }
 
             @media screen and (min-width: 600px) {
-                .dark-blue {
+            .dark-blue {
                     width: 25%;
                     order: 1;
                 }
@@ -65,14 +71,6 @@
                 .red {
                     width: 25%;
                     order: -1;
-                }
-            }
-
-            @media screen and (min-width: ) {
-                .container {
-                    width: 700px;
-                    margin-left: auto;
-                    margin-right: auto;
                 }
             }
         </style>
@@ -85,7 +83,6 @@
                 <div class="box green"></div>
             </div>
             <div class="box red"></div>
-            <div class="box orange"></div>
         </div>
     </body>
 </html>

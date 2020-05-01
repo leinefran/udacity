@@ -17,13 +17,30 @@ body {
 }
 
 article {
-
+    width: 50em;
+    margin: auto;
+    padding: 10px;
 }
 
 h1 {
+    font-size:7vw;
+    text-align: center;
+}
 
+h2 {
+    font-size: 5vw;
+    text-align: center;
+}
+
+p {
+    font-size: 2vw;
+    text-align: justify;
 }
 
 img {
+    max-width: 100%;
+}
 
+.top-img {
+    width: 100%;
 }

@@ -35,7 +35,7 @@ h2 {
 }
 
 p {
-    font-size: 1.2vw;
+    font-size: 16px;
     font-weight: 200;
     text-align: justify;
     line-height: 1.5em;
@@ -54,13 +54,17 @@ img {
     width: 100%;
 }
 
-@media only screen and (max-width: 600px) {
-    body {
-        width: 35em;
+footer {
+    text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+    article {
+        width: 95%;
     }
 
-@media only screen and (max-width: 300px) {
-    body {
-        width: 18em;
+@media screen and (max-width: 300px) {
+    article {
+        width: 95%;
     }
 }

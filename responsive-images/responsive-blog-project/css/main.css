@@ -16,6 +16,12 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
+.logo {
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 50px;
+}
+
 article {
     width: 50em;
     margin: auto;
@@ -26,6 +32,7 @@ h1 {
     font-size:7vw;
     font-weight: 800;
     text-align: center;
+    margin-top: 0;
 }
 
 h2 {
@@ -35,8 +42,8 @@ h2 {
 }
 
 p {
-    font-size: 16px;
-    font-weight: 200;
+    font-size: 18px;
+    font-weight: 400;
     text-align: justify;
     line-height: 1.5em;
 }
@@ -50,12 +57,27 @@ img {
     background-size: contain;
 }
 
-.flourish {
-    width: 100%;
-}
-
 footer {
     text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Style all font awesome icons */
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+}
+
+.reference a {
+    padding-bottom: 20px;
 }
 
 @media screen and (max-width: 800px) {
